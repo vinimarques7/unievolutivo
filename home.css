@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: rgb(230,212,43);
+    background: linear-gradient(90deg, rgba(230,212,43,0.6896008403361344) 0%, rgba(235,198,62,0.6251750700280112) 85%, rgba(224,161,12,0.1657913165266106) 100%);
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    height: 20%;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#home-text{
+    margin-bottom: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffff;
+}
+
+.video-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; 
+    margin-top: 2rem;
+    font-family: arial;
+}
+
+#logo{
+    width: 50%;
+    height: auto;
+
+}
+
+.ul-header{
+    list-style: none;
+    background-color: aqua;
+    width: 75%;
+    font-size: 100%;
+}
+
+/* navegação completa */
+
+.scroll-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    overflow-y: auto;
+}
+
+
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+
+
+img{
+    width: 60%;
+    height: auto;
+}
+
+#titulo-por-topico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #040404;
+    border-bottom: solid;
+    width: 93%;
+    font-size: 100%;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* conheça */
+
+#conheca{
+
+}
+
+.conheca-img-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Áreas */
+
+.area-li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    list-style: none;
+}
+
+.area-li li{
+    border: solid;
+    border-radius: 10px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+/* Docentes */
+
+.docentes-img-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    
+}
+
+.docentes-img-text-container img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    border-radius: 10px;
+    height: 35vh;
+}
+
+
+/* Contato */
+
+.contato{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font-size: 100%;
+}
+
+
+.contato-fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contato-fieldset form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    
+}
+
+.botao-radius{
+    display: flex;
+    gap: 0.15rem;
+}
+
+#form-submit{
+    background-color: aliceblue;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    width: 20%;
+
+}
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+footer li{
+    list-style: none;
+}
