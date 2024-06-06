@@ -9,93 +9,93 @@
     <title>Universidade Evolutiva</title>
 </head>
 <body>
-    <header id="home" >
+    <header id="home">
         <nav class="header-nav">
             <a href="#home"><img id="logo" src="assets/UniEv-no-slogan.png" alt="uma pena com pintura em degradê laranja de sima para baixo, está sendo levada pelo vento e possui detlhes em dorado em sua forma. Abaixo seque a sigla da universidade (uniev)"></a>
+            <!-- Botão de dropdown de linguagem fora do ul-header -->
+            <div id="dropdown-linguagem" class="dropdown">
+                <button id="dropbtn-linguagem" class="dropbtn" data-translate="Language">Linguagem</button>
+                <div id="dropdown-content-linguagem" class="dropdown-content">
+                    <a href="#" id="pt-br" data-translate="Português">Português</a>
+                    <a href="#" id="en" data-translate="English">English</a>
+                </div>
+            </div>
+            <!-- Fim do botão de dropdown de linguagem -->
             <div class="dropdown">
                 <button class="dropbtn"><i class="fa fa-bars"></i></button>
                 <div class="dropdown-content">
                     <ul class="ul-header">
-                        <li class="li-header"><a href="#home" tabindex="1">HOME</a></li>
-                        <li class="li-header"><a href="#conheca" tabindex="2">CONHEÇA</a></li>
-                        <li class="li-header"><a href="#areas" tabindex="3">ÁREAS</a></li>
-                        <li class="li-header"><a href="#ensino" tabindex="4">DOCENTES</a></li>
-                        <li class="li-header"><a href="extra-pages/ingresso.html" tabindex="5">INGRESSO</a></li>
-                        <li class="li-header"><a href="#contato" tabindex="6">CONTATO</a></li>
-                        <li class="li-header" id="area-aluno-header"><a href="extra-pages/area-aluno.html" tabindex="7">ÁREA DO ALUNO</a></li>
+                        <li class="li-header"><a href="#home" tabindex="1" data-translate="HOME">HOME</a></li>
+                        <li class="li-header"><a href="#conheca" tabindex="2" data-translate="CONHEÇA">CONHEÇA</a></li>
+                        <li class="li-header"><a href="#areas" tabindex="3" data-translate="ÁREAS">ÁREAS</a></li>
+                        <li class="li-header"><a href="#ensino" tabindex="4" data-translate="DOCENTES">DOCENTES</a></li>
+                        <li class="li-header"><a href="extra-pages/ingresso.html" tabindex="5" data-translate="INGRESSO">INGRESSO</a></li>
+                        <li class="li-header"><a href="#contato" tabindex="6" data-translate="CONTACTS">CONTATO</a></li>
+                        <li class="li-header" id="area-aluno-header"><a href="extra-pages/area-aluno.html" tabindex="7" data-translate="STUDENT AREA">ÁREA DO ALUNO</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    
+    
     <nav class="scroll-container">
         <nav class="navigation-nav">
-                <!-- Section de Home com vídeo de apresentação -->
-                <section class="home">
-                    <div class="video-content">
-                        <h1 id="home-text">Bem-vindo a Universidade Evolutiva!<p id="home-text-p">Unidade, Universo e Futuro</p></h1>
+            <section class="home">
+                <div class="video-content">
+                    <h1 id="home-text">Bem-vindo a Universidade Evolutiva!<p id="home-text-p">Unidade, Universo e Futuro</p></h1>
+                </div>
+                <video id="home-video" width="640" height="360" autoplay loop muted>
+                    <source src="assets/videos/estudantes-andando.mp4" type="video/mp4">
+                </video>
+            </section>
+            <section id="conheca" class="conheca">
+                <br>
+                <h1 id="titulo-por-topico">Quem somos nós?</h1>
+                <div class="conheca-img-text-container">
+                    <img class="uniev-front-img" src="assets/uniev-front.png" alt="imagem-da-frente-da-universidade">
+                    <div class="text-container">
+                        <p id="story-text">A Universidade Uni Evolutiva (anteriormente conhecida como Universidade Imperial Palmares), fundada em 1870 no Brasil, 
+                            é uma instituição de renome que preserva uma arquitetura barroca e está inserida em um ambiente natural 
+                            deslumbrante. Desde sua fundação, a universidade tem promovido valores de excelência acadêmica, 
+                            diversidade e cidadania responsável. <br><br>Reconhecida pelo Ministério da Educação, a Uni Evolutiva mantém
+                            consistentemente nota 5 em seus cursos, refletindo seu compromisso com a qualidade educacional. Ao longo dos anos
+                            tornou-se um refúgio para mentes inquietas e um terreno fértil para a inovação. <br><br> Sua reputação estelar a
+                            torna uma fonte de inspiração e orgulho para o Brasil e além.Com um olhar voltado para o futuro, continua a 
+                            ser um farol de esperança e oportunidade para as gerações presentes e futuras.
+                        </p>
                     </div>
-                    <video id="home-video" width="640" height="360"  autoplay loop muted>
-                        <source src="assets/videos/estudantes-andando.mp4" type="video/mp4">
-                    </video>
-                </section>
-
-                <!-- Section de apresentação da universidade -->
-                <section id="conheca" class="conheca">
-                    <br>
-                    <h1 id="titulo-por-topico">Quem somos nós?</h1>
-                    <div class="conheca-img-text-container">
-                        <img class="uniev-front-img" src="assets/uniev-front.png" alt="imagem-da-frente-da-universidade">
-                        <div class="text-container">
-                            <p id="story-text">A Universidade Uni Evolutiva (anteriormente conhecida como Universidade Imperial Palmares), fundada em 1870 no Brasil, 
-                                é uma instituição de renome que preserva uma arquitetura barroca e está inserida em um ambiente natural 
-                                deslumbrante. Desde sua fundação, a universidade tem promovido valores de excelência acadêmica, 
-                                diversidade e cidadania responsável. <br><br>Reconhecida pelo Ministério da Educação, a Uni Evolutiva mantém
-                                consistentemente nota 5 em seus cursos, refletindo seu compromisso com a qualidade educacional. Ao longo dos anos
-                                tornou-se um refúgio para mentes inquietas e um terreno fértil para a inovação. <br><br> Sua reputação estelar a
-                                torna uma fonte de inspiração e orgulho para o Brasil e além.Com um olhar voltado para o futuro, continua a 
-                                ser um farol de esperança e oportunidade para as gerações presentes e futuras.
-                            </p>
+                </div>
+            </section>
+            <section id="areas" class="areas">
+                <h1 id="titulo-por-topico">Conheça nossas áreas!</h1>
+                <div class="slider">
+                    <div class="areas-img-text-container">
+                        <div class="area-text">
+                            <ul class="area-li">
+                                <img src="assets/area/area-engenharias.webp" alt="homem com capacete laranja, colete de segurança amarelo  e macacão laranja. Fundo em uma estação elétrica e transformadres elétricos.">
+                                <li><strong>ENGENHARIA:</strong> Desafie os limites da criatividade e da inovação. Construa pontes entre o presente e o futuro, criando soluções que transformam o mundo ao nosso redor.</li>
+                                <img src="assets/area/areas-tecnologia.jpg" alt="Duas pessoas em um escritório com vários computadores analisando algo em um tablete. Um homem com camisa social azul e uma mulher com blazer com o tablet.">
+                                <li><strong>TECNOLOGIA:</strong> Domine as ferramentas do amanhã e lidere a revolução digital. Desenvolva soluções inteligentes para os desafios do século XXI e transforme a maneira como vivemos e trabalhamos.</li>
+                                <img src="assets/area/area-medicina.jpg" alt="três pessoas realizando uma cirurgia, com toucas, máscaras, e ferramentas.">
+                                <li><strong>MEDICINA:</strong> Mergulhe no estudo do corpo humano e na busca incessante pela saúde e bem-estar. Seja o herói que salva vidas e transforma comunidades.</li>
+                                <img src="assets/area/area-biologicas.webp" alt="homem de jaleco, barba e óculos depositando um material químico minusciosamente.">
+                                <li><strong>CIÊNCIAS BIOLÓGICAS:</strong> Nas Ciências Biológicas, desvende os mistérios da vida e da natureza. Explore a diversidade da vida em nosso planeta e descubra maneiras de preservá-la para as gerações futuras.</li>
+                                <img src="assets/area/area-humanas.webp" alt="Um homem com camisa social branca e barba e com as palmas viradas para cima conversando com um casal. À direita um homem de jaqueta azul, à esquerda está a mulher trajada de rosa.">
+                                <li><strong>HUMANAS:</strong> Mergulhe na complexidade da mente humana e da sociedade. Compreenda o passado, analise o presente e transforme o futuro com sabedoria e empatia.</li>
+                                <img src="assets/area/area-linguagens.avif" alt="mulher professora escrevendo em inglês em um quadro negro.">
+                                <li><strong>LINGUAGENS:</strong> Explore a diversidade das formas de comunicação. Aprenda a expressar-se em diferentes idiomas e mídias, ampliando sua capacidade de interação e compreensão.</li>
+                                <img src="assets/area/area-direito.jpg" alt="uma balança de pratos ao lado de uma mão humana batendo um martelo de corte.">
+                                <li><strong>DIREITO:</strong> Defenda os valores da justiça e da equidade. Seja a voz dos que não podem falar e lute pela construção de um mundo mais justo e igualitário.</li>
+                                <img src="assets/area/area-artes.jpg" alt="pessoas pintando quadros em uma sala de pintura. Um rapaz, uma mulher e outro rapaz pintam respectivamente. No fundo tem mais duas pessoas.">
+                                <li><strong>EXPRESSÕES ARTÍSTICAS:</strong> Liberte sua imaginação e explore os limites da criatividade. Deixe sua marca no mundo através da arte, inspirando e emocionando pessoas ao redor do globo.</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
-
-
-                <!-- Section de áreas: cursos e pesquisas -->
-                <section id="areas" class="areas">
-                    <h1 id="titulo-por-topico">Conheça nossas áreas!</h1>
-                        <div class="slider">
-
-                            <div class="areas-img-text-container">
-                                <div class="area-text">
-                                        <ul class="area-li">
-                                            <img src="assets/area/area-engenharias.webp" alt="homem com capacete laranja, colete de segurança amarelo  e macacão laranja. Fundo em uma estação elétrica e transformadres elétricos.">
-                                            <li><strong>ENGENHARIA:</strong> Desafie os limites da criatividade e da inovação. Construa pontes entre o presente e o futuro, criando soluções que transformam o mundo ao nosso redor.</li>
-                                            <img src="assets/area/areas-tecnologia.jpg" alt="Duas pessoas em um escritório com vários computadores analisando algo em um tablete. Um homem com camisa social azul e uma mulher com blazer com o tablet.">
-                                            <li><strong>TECNOLOGIA:</strong> Domine as ferramentas do amanhã e lidere a revolução digital. Desenvolva soluções inteligentes para os desafios do século XXI e transforme a maneira como vivemos e trabalhamos.</li>
-                                            <img src="assets/area/area-medicina.jpg" alt="três pessoas realizando uma cirurgia, com toucas, máscaras, e ferramentas.">
-                                            <li><strong>MEDICINA:</strong> Mergulhe no estudo do corpo humano e na busca incessante pela saúde e bem-estar. Seja o herói que salva vidas e transforma comunidades.</li>
-                                            <img src="assets/area/area-biologicas.webp" alt="homem de jaleco, barba e óculos depositando um material químico minusciosamente.">
-                                            <li><strong>CIÊNCIAS BIOLÓGICAS:</strong> Nas Ciências Biológicas, desvende os mistérios da vida e da natureza. Explore a diversidade da vida em nosso planeta e descubra maneiras de preservá-la para as gerações futuras.</li>
-                                            <img src="assets/area/area-humanas.webp" alt="Um homem com camisa social branca e barba e com as palmas viradas para cima conversando com um casal. À direita um homem de jaqueta azul, à esquerda está a mulher trajada de rosa.">
-                                            <li><strong>HUMANAS:</strong> Mergulhe na complexidade da mente humana e da sociedade. Compreenda o passado, analise o presente e transforme o futuro com sabedoria e empatia.</li>
-                                            <img src="assets/area/area-linguagens.avif" alt="mulher professora escrevendo em inglês em um quadro negro.">
-                                            <li><strong>LINGUAGENS:</strong> Explore a diversidade das formas de comunicação. Aprenda a expressar-se em diferentes idiomas e mídias, ampliando sua capacidade de interação e compreensão.</li>
-                                            <img src="assets/area/area-direito.jpg" alt="uma balança de pratos ao lado de uma mão humana batendo um martelo de corte.">
-                                            <li><strong>DIREITO:</strong> Defenda os valores da justiça e da equidade. Seja a voz dos que não podem falar e lute pela construção de um mundo mais justo e igualitário.</li>
-                                            <img src="assets/area/area-artes.jpg" alt="pessoas pintando quadros em uma sala de pintura. Um rapaz, uma mulher e outro rapaz pintam respectivamente. No fundo tem mais duas pessoas.">
-                                            <li><strong>EXPRESSÕES ARTÍSTICAS:</strong> Liberte sua imaginação e explore os limites da criatividade. Deixe sua marca no mundo através da arte, inspirando e emocionando pessoas ao redor do globo.</li>
-                                        </ul>
-                                </div>
-                            </div>
-                            
-                <!-- </section> -->
-
-                <!-- Section dos tipos de ensino, cadeiras, laboratórios, etc -->
                 <section id="ensino" class="ensino">
                     <br>
                     <h1 id="titulo-por-topico">Representantes do Corpo Docente</h1>
-
                     <div class="coordenacao">
                         <div class="docentes-img-text-container">
                             <img id="coordenador" src="assets/area/docentes/medicina-suzana.png" alt="coordenadora-de-medicina"><p>Coordenadora do departamento de Medicina: Suzana Alvaraz</p>
@@ -109,60 +109,57 @@
                         </div>
                     </div>
                 </section>
-
-
-                <!-- Section para o FAQs da universidade -->
                 <section id="contato" class="contato">
                     <fieldset class="contato-fieldset"><h1 id="contato-title">Deixe sua mensagem ou faça uma pergunta!</h1>
                         <div class="data-container">
-                            <form>
+                            <form id="contato-form">
                                 <div>
                                     <label>Nome:</label>
-                                    <input type="text" placeholder="Digite seu nome" required>
+                                    <input id="nome" class="input-field" type="text" placeholder="Digite seu nome" required>
                                 </div>
                                 <div>
                                     <label>Email:</label>
-                                    <input type="email" placeholder="Seu email" required>
+                                    <input id="email" class="input-field" type="email" placeholder="Seu email" required>
                                 </div>
                                 <div class="botao-radius">
                                     <label>Você é:</label>
-                                    <input type="radio" name="persona" value="responsavel">
+                                    <input type="radio" name="persona" value="responsavel" required>
                                     <label>Responsável</label>
-                                    <input type="radio" name="persona" value="aluno">
+                                    <input type="radio" name="persona" value="aluno" required>
                                     <label>Aluno</label>
-                                    <input type="radio" name="persona" value="aluno">
+                                    <input type="radio" name="persona" value="aluno-independente" required>
                                     <label>Aluno Independente</label>
+                                    <span id="persona-error" class="error">Selecione uma opção.</span>
                                 </div>
                                 <div>
-                                    <textarea name="comentario" cols="45" rows="5" placeholder="Contribua com um feedback!"></textarea>
+                                    <textarea id="feedback" name="comentario" cols="45" rows="5" placeholder="Contribua com um feedback!"></textarea>
+                                    <span id="feedback-error" class="error">Feedback é obrigatório.</span>
                                 </div>
-
                                 <input id="form-submit" type="submit" value="Enviar">
                             </form>
                         </div>
                     </fieldset>
                 </section>
             </nav>
-
-            <!-- Footer do site -->
-            <footer>
-                <div class="footer-list">
-                    <ul class="ul-footer">
-                        <div id="footer-column">
-                            <li><a href="">Email: evolutiva@uniev.com</a></li>
-                            <li>Ouvidoria +12 3456-7890</li>
-                        </div>
-                        <div id="footer-column">
-                            <li>Nossos Parceiros</li>
-                            <li><a href="extra-pages/politica-privacidade.html">Política de Privacidade</a></li>
-                        </div>
-                    </ul>
-                </div>
-                    <P id="informacoes">Para mais informações, clique <a href="">aqui</a></P>
-                    <p>Todos os direitos reservados Uniev | 2024*</p>
-            </footer>
         </nav>
     </nav>
-    <script src="script.js"></script>
+    <footer>
+        <div class="footer-list">
+            <ul class="ul-footer">
+                <div id="footer-column">
+                    <li><a href="">Email: evolutiva@uniev.com</a></li>
+                    <li>Ouvidoria +12 3456-7890</li>
+                </div>
+                <div id="footer-column">
+                    <li>Nossos Parceiros</li>
+                    <li><a href="extra-pages/politica-privacidade.html">Política de Privacidade</a></li>
+                </div>
+            </ul>
+        </div>
+        <P id="informacoes">Para mais informações, clique <a href="">aqui</a></P>
+        <p>Todos os direitos reservados Uniev | 2024*</p>
+    </footer>
+    <script src="validacao-contato.js"></script>
+    <script src="traducao-home.js"></script>
 </body>
 </html>

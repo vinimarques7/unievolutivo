@@ -9,19 +9,24 @@
 </head>
 <body>
     <nav>
-        <!-- <img src="../assets/UniEv-no-slogan.png" alt="logo-uniev"> -->
-        <h2>Faça seu login</h2>
-        <form>
-            <div id="form-inputs">
-                <input type="email" placeholder="Email ou CPF">
-                <input type="password" placeholder="Senha">
-            </div>
-            <div id="form-buttons">
-                <a href="../home.html"><button type="button">RETORNAR</button></a>
-                <input type="submit" value="ENTRAR">
-            </div>
-        </form>
+        <div id="content-container">
+            <img id="logo" src="../assets/UniEv-no-slogan.png" alt="logo-uniev">
+            <h2>Faça seu login</h2>
+            <form id="login-form">
+                <div id="form-inputs">
+                    <input type="email" id="email" placeholder="Email ou CPF" required>
+                    <span id="email-error" class="error">Email inválido</span>
+                    <input type="password" id="senha" placeholder="Senha" required>
+                    <span id="senha-error" class="error">Senha deve ter no mínimo 6 caracteres</span>
+                </div>
+                <div id="form-buttons">
+                    <a href="../home.html"><button type="button">RETORNAR</button></a>
+                    <input type="submit" value="ENTRAR" disabled>
+                </div>
+            </form>
+        </div>        
     </nav>
     <img id="background-img" src="../assets/student-area.jpg" alt="">
+    <script src="validacao-aluno.js"></script>
 </body>
 </html>
