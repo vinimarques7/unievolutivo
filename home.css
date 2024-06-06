@@ -17,7 +17,6 @@ body{
 
 #home{
     display: flex;
-    justify-content: center;
     height: 20%;
 }
 
@@ -25,7 +24,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 100%;
+    height: 15%;
+    position: inherit;
+    position: fixed; 
+    top: 0; 
+    left: 0;    
+    background: rgb(74, 70, 34); /* Fundo não transparente */
+    z-index: 1000; /* Acima de todos os elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #home-text{
@@ -41,14 +48,14 @@ body{
     position: absolute;
     text-align: center;
     z-index: 1; 
-    margin-top: 2rem;
+    margin-top: 30%;
     font-family: arial;
     width: 100%;
     height: 7%;
 }
 
 #logo{
-    width: 30%;
+    width: 25%;
     height: auto;
 
 }
@@ -56,6 +63,7 @@ body{
 
 /* Estilos para o dropdown */
 .dropdown {
+    margin-right: 9%;
     position: relative;
     display: inline-block;
 }
@@ -126,6 +134,7 @@ body{
 video{
     width: 100%;
     height: auto;
+    margin-top: 22%;
 }
 
 
