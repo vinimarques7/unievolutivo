@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: rgb(230, 212, 43);
+    background: linear-gradient(90deg, rgba(230, 212, 43, 0.6896008403361344) 0%, rgba(235, 198, 62, 0.6251750700280112) 85%, rgba(224, 161, 12, 0.1657913165266106) 100%);
+}
+
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px; /* Altura fixa */
+    position: fixed; /* Fixo no topo */
+    top: 0;
+    left: 0;
+    background: rgba(74, 70, 34, 0.9); /* Fundo não transparente */
+    z-index: 1000; /* Acima de todos os elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 25%;
+    height: auto;
+}
+
+/* Estilos para o dropdown */
+.dropdown {
+    margin-right: 9%;
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 15%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content ul li {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.dropdown-content ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.ul-header {
+    list-style: none;
+    background-color: rgba(255, 221, 0, 0.353);
+    width: 100%;
+    font-size: 90%;
+}
+
+/* navegação completa */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    font-size: 80%;
+}
+
+h1, p{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    overflow-y: auto;
+    width: 90%;
+}
+
+#content-ul{
+    list-style: circle;
+}
+
+img {
+    width: 60%;
+    height: auto;
+}
+
+/* INÍCIO DA PÁGINA */
+
+
+.vestibulares {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#ingresso-text {
+    display: flex  
+}
+
+#exemplos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+}
+
+#ingresso-fieldset{}
